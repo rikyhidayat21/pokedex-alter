@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Badge } from "./pokemon-style/Badge";
 import { CardPoke, PokemonTitleCard, Image } from "./pokemon-style/Card";
 
 export default function PokemonCard({ id, name, image, type }) {
@@ -48,6 +49,13 @@ export default function PokemonCard({ id, name, image, type }) {
         <Link to={`/pokemon/${name}`}>
           <Image src={image} alt={name} />
         </Link>
+        <div
+          style={{
+            textAlign: "center",
+          }}
+        >
+          Type: {type}
+        </div>
       </CardPoke>
     </div>
   );

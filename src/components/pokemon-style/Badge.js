@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 export const Badge = styled.div({
-  color: "white",
+  color: "black",
   textDecoration: "none",
   padding: "3px 6px",
   postion: "relative",
