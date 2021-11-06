@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# POKEDEX-ALTER
 
 ## Tech Stack:
 
@@ -21,9 +21,12 @@
 1. Open your terminal or CMD, follow this step:
 
 ```
-https://github.com/rikyhidayat21/pokedex-alter.git
+git clone https://github.com/rikyhidayat21/pokedex-alter.git
+
 cd pokedex-alter
+
 yarn (or) npm i
+
 yarn start (or) npm run start
 ```
 
