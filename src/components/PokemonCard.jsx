@@ -38,7 +38,7 @@ export default function PokemonCard({ id, name, image, type }) {
       backgroundColor = "#E0F1FD";
       break;
     default:
-      backgroundColor = "black";
+      backgroundColor = "#C7BEA2";
       break;
   }
 

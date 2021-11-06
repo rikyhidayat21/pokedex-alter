@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Button } from "react-bootstrap";
 import PokemonList from "../components/PokemonList";
 import axios from "../config/axios";
 
@@ -15,7 +15,7 @@ export default function HomePage() {
 
   const retrievePokemons = async () => {
     try {
-      const { data } = await axios.get("pokemon?limit=20");
+      const { data } = await axios.get(loadMore);
 
       setLoadMore(data.next);
 
@@ -47,6 +47,7 @@ export default function HomePage() {
                 type={pokemon.types[0].type.name}
               />
             ))}
+          <Button onClick={() => retrievePokemons()}>Load More</Button>
         </Row>
       </Container>
     </div>
