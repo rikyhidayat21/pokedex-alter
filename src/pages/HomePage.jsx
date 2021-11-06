@@ -36,7 +36,7 @@ export default function HomePage() {
 
   return (
     <div>
-      <Container>
+      <Container style={{ marginTop: "70px" }}>
         <InfiniteScroll
           initialLoad={false}
           loadMore={retrievePokemons}

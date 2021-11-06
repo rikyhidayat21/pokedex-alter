@@ -1,0 +1,31 @@
+import React from "react";
+import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
+import logo from "../images/logo.png";
+
+const Navbar = styled.nav`
+  width: 100%;
+  box-shadow: rgb(49 53 59 / 12%) 0px 1px 6px 0px;
+  background-color: #fff;
+  padding: 0.5rem;
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 300px;
+  z-index: 3;
+`;
+
+export default function Header() {
+  return (
+    <div>
+      <Navbar>
+        <Link to="/">
+          <img src={logo} alt="pokemon" width={120} height={50} />
+        </Link>
+      </Navbar>
+    </div>
+  );
+}

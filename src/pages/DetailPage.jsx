@@ -24,7 +24,7 @@ export default function DetailPage() {
 
   return (
     <div>
-      <Container>
+      <Container style={{ marginTop: "70px" }}>
         {pokemon && (
           <PokemonDetail
             name={pokemon.name}
