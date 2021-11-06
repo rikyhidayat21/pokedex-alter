@@ -1,6 +1,33 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tech Stack:
+
+- [x] React Js
+- [x] React Router
+- [x] React-Bootstrap
+- [x] Axios
+- [x] Emotion
+- [x] React Infinite Scroller
+
+## Features:
+
+- [x] User can browse Pokemon in the infinite list
+- [x] User can view detailed information of each pokemon
+- [x] User can view image of each pokemon
+- [] User can filter a list of pokemon based on an attribute of pokemon
+
+## How to run locally:
+
+1. Open your terminal or CMD, follow this step:
+
+```
+https://github.com/rikyhidayat21/pokedex-alter.git
+cd pokedex-alter
+yarn (or) npm i
+yarn start (or) npm run start
+```
+
+<!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -67,4 +94,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
