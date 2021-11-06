@@ -15,7 +15,7 @@ export default function DetailPage() {
   const retrievePokemon = async () => {
     try {
       const { data } = await axios.get(`pokemon/${name}`);
-      console.log(data, "<=== data");
+      // console.log(data, "<=== data");
       setPokemon(data);
     } catch (error) {
       console.log(error, "error");

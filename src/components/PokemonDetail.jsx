@@ -30,7 +30,7 @@ export default function PokemonDetail({
         <Card.Body>
           <Row>
             <Col xs={12} md={4}>
-              <a href={image} target="_blank">
+              <a href={image} target="_blank" rel="noreferrer">
                 <Image src={image} />
               </a>
             </Col>

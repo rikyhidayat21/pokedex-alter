@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Button, Col } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import PokemonCard from "./PokemonCard";
 
 export default function PokemonList({ id, name, image, type }) {

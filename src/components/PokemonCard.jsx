@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Badge } from "./pokemon-style/Badge";
 import { CardPoke, PokemonTitleCard, Image } from "./pokemon-style/Card";
 
 export default function PokemonCard({ id, name, image, type }) {

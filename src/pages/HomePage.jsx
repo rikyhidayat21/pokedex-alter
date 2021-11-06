@@ -45,6 +45,7 @@ export default function HomePage() {
             <Spinner
               animation="grow"
               variant="primary"
+              key={0}
               style={{
                 textAlign: "center",
                 justifyContent: "center",
