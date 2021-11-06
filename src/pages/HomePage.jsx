@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Button } from "react-bootstrap";
+import { Container, Row, Spinner } from "react-bootstrap";
+import InfiniteScroll from "react-infinite-scroller";
 import PokemonList from "../components/PokemonList";
 import axios from "../config/axios";
 
@@ -36,19 +37,37 @@ export default function HomePage() {
   return (
     <div>
       <Container>
-        <Row>
-          {pokemons &&
-            pokemons.map((pokemon) => (
-              <PokemonList
-                key={pokemon.id}
-                id={pokemon.id}
-                name={pokemon.name}
-                image={pokemon.sprites.other["official-artwork"].front_default}
-                type={pokemon.types[0].type.name}
-              />
-            ))}
-          <Button onClick={() => retrievePokemons()}>Load More</Button>
-        </Row>
+        <InfiniteScroll
+          initialLoad={false}
+          loadMore={retrievePokemons}
+          hasMore={true}
+          loader={
+            <Spinner
+              animation="grow"
+              variant="primary"
+              style={{
+                textAlign: "center",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            />
+          }
+        >
+          <Row>
+            {pokemons &&
+              pokemons.map((pokemon) => (
+                <PokemonList
+                  key={pokemon.id}
+                  id={pokemon.id}
+                  name={pokemon.name}
+                  image={
+                    pokemon.sprites.other["official-artwork"].front_default
+                  }
+                  type={pokemon.types[0].type.name}
+                />
+              ))}
+          </Row>
+        </InfiniteScroll>
       </Container>
     </div>
   );
