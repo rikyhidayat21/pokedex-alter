@@ -29,6 +29,9 @@ export default function DetailPage() {
           <PokemonDetail
             name={pokemon.name}
             image={pokemon.sprites.other["official-artwork"].front_default}
+            stats={pokemon.stats}
+            abilities={pokemon.abilities}
+            moves={pokemon.moves}
           />
         )}
       </Container>
